@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maristion</title>
+    <!-- BOOTSTRAP CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- BOOTSTRAP CSS -->
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- JQUERY -->
+
+    <!-- FLICITY -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- FLICITY -->
+
+    <!-- TYPED JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <!-- TYPED JS -->
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- FONT AWESOME -->
+
+    <!-- STYLE CUSTOM -->
+    <link rel="stylesheet" href="assets/style.css" />
+    <!-- STYLE CUSTOM -->
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      id="navbar"
+      class="navbar navbar-dark navbar-expand-md py-3 justify-content-center fixed-top"
+    >
+      <div class="container">
+        <a href="/" class="navbar-brand d-flex w-50 me-auto">
+          <img
+            src="assets/images/index/logo-white.png"
+            alt="logo"
+            class="img-fluid"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsingNavbar3"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+          <ul class="navbar-nav w-100 justify-content-center">
+            <li class="nav-item active">
+              <a
+                class="nav-link text-center button-underline text-md-start active"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-center button-underline text-md-start"
+                href="#"
+                >Package</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-center button-underline text-md-start"
+                href="#"
+                >Travel</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-center button-underline text-md-start"
+                href="#"
+                >Stories</a
+              >
+            </li>
+          </ul>
+          <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
+            <li class="nav-item text-center text-md-center mt-3">
+              <a href="#" class="btn btn-sign-in">Sign-In</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- SECTION 1: JUMBOTRON -->
+      <section
+        id="jumbotron"
+        class="d-flex justify-content-center align-items-center"
+      >
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <div class="col-lg-12 text-center" style="margin-top: 100px">
+              <h1 class="text-header text-white">
+                Explore the <span class="text-type typing-2"> beauty| </span>
+                <br />
+                of Indonesian Maritime easily
+              </h1>
+            </div>
+            <div class="col-lg-12 mt-3 d-none d-lg-block">
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button
+                    class="nav-link active"
+                    id="nav-home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-home"
+                    aria-selected="true"
+                  >
+                    Package
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="nav-profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-profile"
+                    aria-selected="false"
+                  >
+                    Let us personalize your destination
+                  </button>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="nav-home"
+                  role="tabpanel"
+                  aria-labelledby="nav-home-tab"
+                  tabindex="0"
+                >
+                  <div class="row">
+                    <div class="col-lg-3 py-4 px-4">
+                      <h6 class="text-white">Where do you want to go?</h6>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Lombok</option>
+                        <option value="1">Komodo Island</option>
+                        <option value="2">Banyuwangi</option>
+                        <option value="3">Maluku</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-3 py-4 px-2">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <h6 class="text-white">When?</h6>
+                          <input
+                            type="date"
+                            class="form-control"
+                            placeholder="10 Oct 2022"
+                            id="exampleFormControlInput1"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <h6 class="text-white">Until?</h6>
+                          <input
+                            type="date"
+                            class="form-control"
+                            placeholder="10 Oct 2022"
+                            id="exampleFormControlInput1"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 py-4 px-3">
+                      <h6 class="text-white">Bugdet?</h6>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Rp. 0 - Rp.1.000.000</option>
+                        <option value="1">Rp. 1.000.000 - Rp 2.000.000</option>
+                        <option value="2">Rp. 3.000.000 - Rp 4.000.000</option>
+                        <option value="3">>Rp. 5.000.000</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-3 py-4 px-5 d-flex align-items-center">
+                      <button class="btn btn-explore">
+                        Explore <i class="ms-4 fa fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="nav-profile"
+                  role="tabpanel"
+                  aria-labelledby="nav-profile-tab"
+                  tabindex="0"
+                >
+                  <div class="row">
+                    <div class="col-lg-3 py-4 px-4">
+                      <h6 class="text-white">Choose your prefrence?</h6>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Adrenaline</option>
+                        <option value="1">Healing</option>
+                        <option value="2">Soft</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-3 py-4 px-2">
+                      <h6 class="text-white">With who?</h6>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Best Friend</option>
+                        <option value="1">Girlfriend</option>
+                        <option value="2">Boyfriend</option>
+                        <option value="3">Family</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-3 py-4 px-3">
+                      <h6 class="text-white">
+                        Bugdet <span style="font-size: 8px">/person</span> ?
+                      </h6>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Rp. 0 - Rp.1.000.000</option>
+                        <option value="1">Rp. 1.000.000 - Rp 2.000.000</option>
+                        <option value="2">Rp. 3.000.000 - Rp 4.000.000</option>
+                        <option value="3">>Rp. 5.000.000</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-3 py-4 px-5 d-flex align-items-center">
+                      <button class="btn btn-explore">
+                        Explore <i class="ms-4 fa fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 mt-3 d-block d-lg-none">
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button
+                    class="nav-link active"
+                    id="nav-home-tab2"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-home2"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-home2"
+                    aria-selected="true"
+                  >
+                    Package
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="nav-profile-tab2"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-profile2"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-profile2"
+                    aria-selected="false"
+                  >
+                    Personalize
+                  </button>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="nav-home2"
+                  role="tabpanel"
+                  aria-labelledby="nav-home-tab2"
+                  tabindex="0"
+                >
+                  <div class="row p-4">
+                    <div class="col-lg-3 mt-3">
+                      <h6 class="text-white">Where do you want to go?</h6>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Lombok</option>
+                        <option value="1">Komodo Island</option>
+                        <option value="2">Banyuwangi</option>
+                        <option value="3">Maluku</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-3">
+                      <div class="row">
+                        <div class="col-lg-6 mt-3">
+                          <h6 class="text-white">When?</h6>
+                          <input
+                            type="date"
+                            class="form-control"
+                            placeholder="10 Oct 2022"
+                            id="exampleFormControlInput1"
+                          />
+                        </div>
+                        <div class="col-lg-6 mt-3">
+                          <h6 class="text-white">Until?</h6>
+                          <input
+                            type="date"
+                            class="form-control"
+                            placeholder="10 Oct 2022"
+                            id="exampleFormControlInput1"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 mt-3">
+                      <h6 class="text-white">Bugdet?</h6>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Rp. 0 - Rp.1.000.000</option>
+                        <option value="1">Rp. 1.000.000 - Rp 2.000.000</option>
+                        <option value="2">Rp. 3.000.000 - Rp 4.000.000</option>
+                        <option value="3">>Rp. 5.000.000</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-3 mt-3 d-flex align-items-center">
+                      <button class="btn btn-explore">
+                        Explore <i class="ms-4 fa fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="nav-profile2"
+                  role="tabpanel"
+                  aria-labelledby="nav-profile-tab2"
+                  tabindex="0"
+                >
+                  <div class="row p-4">
+                    <div class="col-lg-3 mt-3">
+                      <h6 class="text-white">Choose your prefrence?</h6>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Adrenaline</option>
+                        <option value="1">Healing</option>
+                        <option value="2">Soft</option>
+                      </select>
+                    </div>
+                    <div class="col-md-3 mt-3">
+                      <h6 class="text-white">With who?</h6>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Best Friend</option>
+                        <option value="1">Girlfriend</option>
+                        <option value="2">Boyfriend</option>
+                        <option value="3">Family</option>
+                      </select>
+                    </div>
+                    <div class="col-md-3 mt-3">
+                      <h6 class="text-white">
+                        Bugdet <span style="font-size: 8px">/person</span> ?
+                      </h6>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Rp. 0 - Rp.1.000.000</option>
+                        <option value="1">Rp. 1.000.000 - Rp 2.000.000</option>
+                        <option value="2">Rp. 3.000.000 - Rp 4.000.000</option>
+                        <option value="3">>Rp. 5.000.000</option>
+                      </select>
+                    </div>
+                    <div class="col-md-3 mt-3 d-flex align-items-center">
+                      <button class="btn btn-explore">
+                        Explore <i class="ms-4 fa fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: NEW FOR YOU -->
+      <section id="new-for-you">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <div class="col-md-6 order-2 order-md-1">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="d-flex flex-column">
+                    <div
+                      class="img-product mb-3"
+                      style="
+                        background-image: url('/assets/images/index/jetski.png');
+                        height: 240px;
+                      "
+                    >
+                      <div
+                        class="overlay-black d-flex align-items-center justify-content-center"
+                      >
+                        <h1>Jetski</h1>
+                      </div>
+                    </div>
+                    <div
+                      class="img-product d-flex align-items-center justify-content-center"
+                      style="
+                        background-image: url('/assets/images/index/rafting.png');
+                        height: 240px;
+                      "
+                    >
+                      <div
+                        class="overlay-black d-flex align-items-center justify-content-center"
+                      >
+                        <h1>Rafting</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div
+                    class="img-product banana d-flex align-items-center justify-content-center"
+                    style="
+                      background-image: url('/assets/images/index/banana-boat.png');
+                      min-height: 240px;
+                    "
+                  >
+                    <div
+                      class="overlay-black d-flex align-items-center justify-content-center"
+                    >
+                      <h1>Banana Boat</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 ps-5 order-1 order-md-2">
+              <p class="fs-5 text-primary text-sub-header">New For You</p>
+              <h1 class="text-header">
+                Enjoy your vacation <br />
+                with a Local experience
+              </h1>
+              <p class="text-description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s
+              </p>
+              <div class="row mt-5">
+                <div class="col">
+                  <span class="sub">560+</span>
+                  <br />
+                  <span class="sub-2 text-description">Destionation</span>
+                </div>
+                <div class="col">
+                  <span class="sub">120+</span>
+                  <br />
+                  <span class="sub-2 text-description">Homestay</span>
+                </div>
+                <div class="col">
+                  <span class="sub">360K+</span>
+                  <br />
+                  <span class="sub-2 text-description">Happy Tourists</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: EXPLORE MARITIM -->
+      <section id="explore-maritim">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h1 class="text-header">Explore Maritim Destinations</h1>
+              <p class="text-sub-header">
+                A new way to travel by air the easy and fast way. <br />
+                Try it now by filling out the form below!
+              </p>
+            </div>
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <div class="image-container">
+                      <img
+                        src="assets/images/index/waterfal.png"
+                        class="card-img-top"
+                        alt="waterfall"
+                      />
+                      <span class="rating px-2 py-1 text-white">
+                        <i class="fa text-orange fa-star"></i> 5.0
+                      </span>
+                    </div>
+
+                    <div class="card-body">
+                      <h5 class="card-title">Waterfall Sedudo</h5>
+                      <p class="card-text">Nganjuk, East Java</p>
+                      <div
+                        class="row d-flex align-items-center justify-content-center"
+                      >
+                        <div class="col text-center">
+                          <p><span class="fw-bold">Rp.50.000/</span>person</p>
+                        </div>
+                        <div class="col text-center">
+                          <a href="#" class="btn btn-book"> Book </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <div class="image-container">
+                      <img
+                        src="assets/images/index/waterfal.png"
+                        class="card-img-top"
+                        alt="waterfall"
+                      />
+                      <span class="rating px-2 py-1 text-white">
+                        <i class="fa text-orange fa-star"></i> 5.0
+                      </span>
+                    </div>
+
+                    <div class="card-body">
+                      <h5 class="card-title">Waterfall Sedudo</h5>
+                      <p class="card-text">Nganjuk, East Java</p>
+                      <div
+                        class="row d-flex align-items-center justify-content-center"
+                      >
+                        <div class="col text-center">
+                          <p><span class="fw-bold">Rp.50.000/</span>person</p>
+                        </div>
+                        <div class="col text-center">
+                          <a href="#" class="btn btn-book"> Book </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <div class="image-container">
+                      <img
+                        src="assets/images/index/waterfal.png"
+                        class="card-img-top"
+                        alt="waterfall"
+                      />
+                      <span class="rating px-2 py-1 text-white">
+                        <i class="fa text-orange fa-star"></i> 5.0
+                      </span>
+                    </div>
+
+                    <div class="card-body">
+                      <h5 class="card-title">Waterfall Sedudo</h5>
+                      <p class="card-text">Nganjuk, East Java</p>
+                      <div
+                        class="row d-flex align-items-center justify-content-center"
+                      >
+                        <div class="col text-center">
+                          <p><span class="fw-bold">Rp.50.000/</span>person</p>
+                        </div>
+                        <div class="col text-center">
+                          <a href="#" class="btn btn-book"> Book </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <div class="image-container">
+                      <img
+                        src="assets/images/index/waterfal.png"
+                        class="card-img-top"
+                        alt="waterfall"
+                      />
+                      <span class="rating px-2 py-1 text-white">
+                        <i class="fa text-orange fa-star"></i> 5.0
+                      </span>
+                    </div>
+
+                    <div class="card-body">
+                      <h5 class="card-title">Waterfall Sedudo</h5>
+                      <p class="card-text">Nganjuk, East Java</p>
+                      <div
+                        class="row d-flex align-items-center justify-content-center"
+                      >
+                        <div class="col text-center">
+                          <p><span class="fw-bold">Rp.50.000/</span>person</p>
+                        </div>
+                        <div class="col text-center">
+                          <a href="#" class="btn btn-book"> Book </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <div class="image-container">
+                      <img
+                        src="assets/images/index/waterfal.png"
+                        class="card-img-top"
+                        alt="waterfall"
+                      />
+                      <span class="rating px-2 py-1 text-white">
+                        <i class="fa text-orange fa-star"></i> 5.0
+                      </span>
+                    </div>
+
+                    <div class="card-body">
+                      <h5 class="card-title">Waterfall Sedudo</h5>
+                      <p class="card-text">Nganjuk, East Java</p>
+                      <div
+                        class="row d-flex align-items-center justify-content-center"
+                      >
+                        <div class="col text-center">
+                          <p><span class="fw-bold">Rp.50.000/</span>person</p>
+                        </div>
+                        <div class="col text-center">
+                          <a href="#" class="btn btn-book"> Book </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <div class="image-container">
+                      <img
+                        src="assets/images/index/waterfal.png"
+                        class="card-img-top"
+                        alt="waterfall"
+                      />
+                      <span class="rating px-2 py-1 text-white">
+                        <i class="fa text-orange fa-star"></i> 5.0
+                      </span>
+                    </div>
+
+                    <div class="card-body">
+                      <h5 class="card-title">Waterfall Sedudo</h5>
+                      <p class="card-text">Nganjuk, East Java</p>
+                      <div
+                        class="row d-flex align-items-center justify-content-center"
+                      >
+                        <div class="col text-center">
+                          <p><span class="fw-bold">Rp.50.000/</span>person</p>
+                        </div>
+                        <div class="col text-center">
+                          <a href="#" class="btn btn-book"> Book </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <div class="image-container">
+                      <img
+                        src="assets/images/index/waterfal.png"
+                        class="card-img-top"
+                        alt="waterfall"
+                      />
+                      <span class="rating px-2 py-1 text-white">
+                        <i class="fa text-orange fa-star"></i> 5.0
+                      </span>
+                    </div>
+
+                    <div class="card-body">
+                      <h5 class="card-title">Waterfall Sedudo</h5>
+                      <p class="card-text">Nganjuk, East Java</p>
+                      <div
+                        class="row d-flex align-items-center justify-content-center"
+                      >
+                        <div class="col text-center">
+                          <p><span class="fw-bold">Rp.50.000/</span>person</p>
+                        </div>
+                        <div class="col text-center">
+                          <a href="#" class="btn btn-book"> Book </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <div class="image-container">
+                      <img
+                        src="assets/images/index/waterfal.png"
+                        class="card-img-top"
+                        alt="waterfall"
+                      />
+                      <span class="rating px-2 py-1 text-white">
+                        <i class="fa text-orange fa-star"></i> 5.0
+                      </span>
+                    </div>
+
+                    <div class="card-body">
+                      <h5 class="card-title">Waterfall Sedudo</h5>
+                      <p class="card-text">Nganjuk, East Java</p>
+                      <div
+                        class="row d-flex align-items-center justify-content-center"
+                      >
+                        <div class="col text-center">
+                          <p><span class="fw-bold">Rp.50.000/</span>person</p>
+                        </div>
+                        <div class="col text-center">
+                          <a href="#" class="btn btn-book"> Book </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 text-center">
+              <a href="#" class="btn text-center my-3">View More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: MOST PEOPLE GO -->
+      <section id="most-people-go">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 mb-3 text-center">
+              <h3 class="mb-3 text-header">
+                Most People Go <br />
+                In Summer
+              </h3>
+              <div class="img-container">
+                <img
+                  src="assets/images/index/labuan-bajo.png"
+                  alt="labuan-baju"
+                  class="img-fluid"
+                />
+                <div class="text-lokasi">
+                  <h5 class="text-white">Labuan Bajo</h5>
+                  <p class="text-white">NTT,Indonesia</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3 text-center d-flex flex-column">
+              <div class="img-container">
+                <img
+                  src="assets/images/index/pahawang.png"
+                  alt="labuan-baju"
+                  class="img-fluid"
+                />
+                <div class="text-lokasi">
+                  <h5 class="text-white">Pahawang Island</h5>
+                  <p class="text-white">Lampung, Indonesia</p>
+                </div>
+              </div>
+              <div class="img-container mt-4">
+                <img
+                  src="assets/images/index/pahawang.png"
+                  alt="labuan-baju"
+                  class="img-fluid"
+                />
+                <div class="text-lokasi">
+                  <h5 class="text-white">Pahawang Island</h5>
+                  <p class="text-white">Lampung, Indonesia</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3 text-center d-flex flex-column">
+              <div class="img-container">
+                <img
+                  src="assets/images/index/pahawang.png"
+                  alt="labuan-baju"
+                  class="img-fluid"
+                />
+                <div class="text-lokasi">
+                  <h5 class="text-white">Pahawang Island</h5>
+                  <p class="text-white">Lampung, Indonesia</p>
+                </div>
+              </div>
+              <div class="img-container mt-4">
+                <img
+                  src="assets/images/index/pahawang.png"
+                  alt="labuan-baju"
+                  class="img-fluid"
+                />
+                <div class="text-lokasi">
+                  <h5 class="text-white">Pahawang Island</h5>
+                  <p class="text-white">Lampung, Indonesia</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3 text-center">
+              <div class="img-container">
+                <img
+                  src="assets/images/index/bunaken.png"
+                  alt="labuan-baju"
+                  class="img-fluid"
+                />
+                <div class="text-lokasi">
+                  <h5 class="text-white">Labuan Bajo</h5>
+                  <p class="text-white">NTT,Indonesia</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="story">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3>Read the story with Maristion</h3>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="carousel my-3"
+          data-flickity='{ "autoPlay": true, "prevNextButtons": false, "pageDots": false }'
+        >
+          <div class="carousel-cell ms-4">
+            <div class="img-container">
+              <img
+                src="assets/images/index/berita1.png"
+                alt="berita"
+                class="img-fluid"
+              />
+              <div class="text-keterangan position-absolute text-white">
+                <h4>
+                  Snorkeling with Manta <br />
+                  in Belitung Island
+                </h4>
+                <p>Start from Rp. 730,000</p>
+              </div>
+              <a href="#" class="btn btn-readstory text-white position-absolute"
+                >Read Story</a
+              >
+            </div>
+          </div>
+          <div class="carousel-cell ms-4">
+            <div class="img-container">
+              <img
+                src="assets/images/index/berita1.png"
+                alt="berita"
+                class="img-fluid"
+              />
+              <div class="text-keterangan position-absolute text-white">
+                <h4>
+                  Snorkeling with Manta <br />
+                  in Belitung Island
+                </h4>
+                <p>Start from Rp. 730,000</p>
+              </div>
+              <a href="#" class="btn btn-readstory text-white position-absolute"
+                >Read Story</a
+              >
+            </div>
+          </div>
+          <div class="carousel-cell ms-4">
+            <div class="img-container">
+              <img
+                src="assets/images/index/berita1.png"
+                alt="berita"
+                class="img-fluid"
+              />
+              <div class="text-keterangan position-absolute text-white">
+                <h4>
+                  Snorkeling with Manta <br />
+                  in Belitung Island
+                </h4>
+                <p>Start from Rp. 730,000</p>
+              </div>
+              <a href="#" class="btn btn-readstory text-white position-absolute"
+                >Read Story</a
+              >
+            </div>
+          </div>
+          <div class="carousel-cell ms-4">
+            <div class="img-container">
+              <img
+                src="assets/images/index/berita1.png"
+                alt="berita"
+                class="img-fluid"
+              />
+              <div class="text-keterangan position-absolute text-white">
+                <h4>
+                  Snorkeling with Manta <br />
+                  in Belitung Island
+                </h4>
+                <p>Start from Rp. 730,000</p>
+              </div>
+              <a href="#" class="btn btn-readstory text-white position-absolute"
+                >Read Story</a
+              >
+            </div>
+          </div>
+          <div class="carousel-cell ms-4">
+            <div class="img-container">
+              <img
+                src="assets/images/index/berita1.png"
+                alt="berita"
+                class="img-fluid"
+              />
+              <div class="text-keterangan position-absolute text-white">
+                <h4>
+                  Snorkeling with Manta <br />
+                  in Belitung Island
+                </h4>
+                <p>Start from Rp. 730,000</p>
+              </div>
+              <a href="#" class="btn btn-readstory text-white position-absolute"
+                >Read Story</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container pb-5">
+        <div class="">
+          <footer class="row pt-5 border-top">
+            <div class="col-md-3 text-center text-md-start">
+              <a
+                href="/"
+                class="d-flex align-items-center d-none d-md-block mb-3 link-dark text-decoration-none"
+              >
+                <img
+                  src="assets/images/index/logo-white.png"
+                  alt="logo"
+                  class="img-fluid"
+                />
+              </a>
+              <p class="text-white">
+                Copyright © 2022. <br />
+                All Rights Reserved.
+              </p>
+            </div>
+
+            <div class="col-md-2 text-center text-md-start">
+              <h5 class="text-white mb-4">Page Menus</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-3">
+                  <a href="#" class="nav-link p-0 text-muted">Home</a>
+                </li>
+                <li class="nav-item mb-3">
+                  <a href="#" class="nav-link p-0 text-muted">About Us</a>
+                </li>
+                <li class="nav-item mb-3">
+                  <a href="#" class="nav-link p-0 text-muted">Contact us</a>
+                </li>
+                <li class="nav-item mb-3">
+                  <a href="#" class="nav-link p-0 text-muted">My Account</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-2 text-center text-md-start">
+              <h5 class="text-white mb-4">Our Product</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-3">
+                  <a href="#" class="nav-link p-0 text-muted">Booking Flight</a>
+                </li>
+                <li class="nav-item mb-3">
+                  <a href="#" class="nav-link p-0 text-muted">Booking Hotels</a>
+                </li>
+                <li class="nav-item mb-3">
+                  <a href="#" class="nav-link p-0 text-muted">Trip Package</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-2 text-center text-md-start">
+              <h5 class="text-white mb-4">Social Media</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-3">
+                  <a href="#" class="nav-link p-0 text-muted">Twitter</a>
+                </li>
+                <li class="nav-item mb-3">
+                  <a href="#" class="nav-link p-0 text-muted">Tiktok</a>
+                </li>
+                <li class="nav-item mb-3">
+                  <a href="#" class="nav-link p-0 text-muted">Facebook</a>
+                </li>
+                <li class="nav-item mb-3">
+                  <a href="#" class="nav-link p-0 text-muted">Instagram</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3 text-center text-md-start">
+              <img
+                src="assets/images/index/footer.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+          </footer>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPT BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <!-- SCRIPT BOOTSTRAP -->
+
+    <!-- CUSTOM SCRIPT -->
+    <script src="assets/script.js"></script>
+    <!-- CUSTOM SCRIPT -->
+  </body>
+</html>

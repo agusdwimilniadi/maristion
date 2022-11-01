@@ -1,0 +1,337 @@
+/* STYLE UMUM */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+.button-underline {
+  background: linear-gradient(currentColor 0 0) bottom / var(--d, 0) 3px
+    no-repeat;
+  transition: 0.5s;
+}
+.button-underline:hover,
+.button-underline.active {
+  --d: 40%;
+}
+select {
+  border-radius: 12px !important;
+}
+.text-orange {
+  color: #ff7a01;
+}
+/* END STYLE UMUM */
+
+/* NAVBAR */
+#navbar {
+  transition: all 0.3s;
+}
+@media (min-width: 768px) {
+  #navbar .navbar-brand.abs {
+    position: absolute;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+}
+
+#navbar .btn-sign-in {
+  background-color: white;
+  box-shadow: inset 3.63333px -3.63333px 3.63333px rgba(165, 165, 165, 0.075),
+    inset -3.63333px 3.63333px 3.63333px rgba(255, 255, 255, 0.075);
+  backdrop-filter: blur(7.23033px);
+  border-radius: 66px;
+  padding: 7px 30px;
+}
+
+#navbar .navbar-collapse.show {
+  background-color: #232631;
+  transition: all 0.2s;
+  padding: 30px 20px;
+}
+/* END NAVBAR */
+
+/* SECTION 1: JUMBOTRON */
+#jumbotron {
+  background-image: url("/assets/images/index/bg-main.png");
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#jumbotron .text-header {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 78px;
+}
+@media (max-width: 768px) {
+  #jumbotron .text-header {
+    font-size: 30px;
+    line-height: 52px;
+  }
+}
+#jumbotron .text-header .text-type {
+  background-color: #3258e8;
+  border-radius: 20px;
+  padding: 10px;
+}
+#jumbotron .nav-tabs {
+  border-bottom: none;
+}
+#jumbotron .nav-link:hover,
+#jumbotron .nav-link {
+  border: transparent;
+  background-color: white;
+  padding: 8px 27px;
+}
+#jumbotron .nav-link.active {
+  background-color: #3258e8;
+  color: white;
+  border: transparent;
+}
+#jumbotron .nav-tabs .nav-link:nth-child(1) {
+  border-radius: 20px 0 0 0;
+}
+#jumbotron .nav-link:nth-child(2) {
+  border-radius: 0 20px 0 0;
+}
+
+#jumbotron .tab-content {
+  border-radius: 0 20px 20px 20px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(6px);
+}
+#jumbotron .btn-explore {
+  background-color: #3258e8;
+  border-radius: 12px;
+  padding: 12px 49px;
+  color: white;
+}
+/* END SECTION 1: JUMBOTRON */
+
+/* SECTION 2: NEW FOR YOU */
+#new-for-you {
+  background-color: white;
+  min-height: 80vh;
+  padding: 100px 0;
+}
+#new-for-you .img-product {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+  color: transparent;
+  transition: 0.3s;
+}
+#new-for-you .img-product:hover {
+  color: white;
+}
+#new-for-you .text-sub-header {
+  font-weight: 600;
+}
+#new-for-you .text-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+}
+#new-for-you .text-description {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  font-style: normal;
+  color: #848484;
+}
+#new-for-you .sub {
+  font-weight: 600 !important;
+  font-size: 20px;
+  color: #232631;
+}
+#new-for-you .sub-2 {
+  font-size: 16px;
+  line-height: 30px;
+  color: #232631;
+}
+#new-for-you .overlay-black {
+  background: transparent;
+  border-radius: 12px;
+  padding: 20px;
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+}
+#new-for-you .img-product:hover .overlay-black {
+  background: rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 768px) {
+  #new-for-you .img-product.banana {
+    margin-top: 20px;
+  }
+}
+/* SECTION 2: NEW FOR YOU */
+
+/* SECTION 3: EXPLORE MARITIM */
+#explore-maritim {
+  background-color: #f5f5f5;
+  min-height: 80vh;
+  padding: 100px 0;
+}
+#explore-maritim .text-sub-header {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #7b7b7b !important;
+}
+#explore-maritim .card {
+  background-color: white !important;
+  border: none;
+  box-shadow: 0px 14px 25px #f2f2f2;
+  border-radius: 24px !important;
+}
+@media (max-width: 768px) {
+  #explore-maritim .card {
+    margin: 20px;
+  }
+}
+#explore-maritim .card-img-top {
+  border-radius: 24px !important;
+  transition: 0.3s;
+  object-fit: cover;
+  object-position: center;
+  height: 280px;
+}
+#explore-maritim .image-container {
+  overflow: hidden;
+  position: relative;
+  border-radius: 24px !important;
+}
+#explore-maritim .card-img-top:hover {
+  transform: scale(1.05);
+}
+#explore-maritim .btn-book {
+  background-color: #3258e8;
+  padding: 8px 24px;
+  color: white;
+}
+#explore-maritim .btn-book:hover {
+  background-color: #203b9c;
+  color: white;
+}
+#explore-maritim .rating {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(6px);
+  border-radius: 20px;
+}
+/* SECTION 3: EXPLORE MARITIM */
+
+/* SECTION 4: MOST PEOPLE GO */
+#most-people-go {
+  background-color: #f1f5fa;
+  min-height: 80vh;
+  padding: 80px 0px;
+}
+#most-people-go .text-header {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+#most-people-go .img-container {
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative !important;
+}
+#most-people-go .img-container img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s;
+}
+#most-people-go .img-container img:hover {
+  transform: scale(1.05);
+}
+#most-people-go .text-lokasi {
+  position: absolute !important;
+  left: 20px;
+  bottom: 10px;
+}
+#most-people-go .img-container img {
+  border-radius: 20px;
+}
+/* SECTION 4: MOST PEOPLE GO */
+
+/* SECTION 5: STORY */
+#story {
+  background-color: white;
+  padding: 80px 0px;
+  border-radius: 0 0 70px 70px;
+  padding-bottom: 200px;
+}
+#story .img-container {
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative !important;
+}
+#story .img-container img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s;
+}
+#story .text-keterangan {
+  position: absolute !important;
+  left: 40px;
+  bottom: 40px;
+}
+#story .text-keterangan h4 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+}
+#story .text-keterangan p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+}
+@media (max-width: 768px) {
+  #story .text-keterangan {
+    left: 20px;
+    bottom: 20px;
+  }
+  #story .text-keterangan h4 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  #story .text-keterangan p {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 27px;
+  }
+}
+#story .btn-readstory {
+  background-color: #3258e8;
+  bottom: 100px;
+  right: 50px;
+  padding: 10px 60px;
+}
+#story .btn-readstory:hover {
+  background-color: #223ea4;
+}
+@media (max-width: 768px) {
+  #story .btn-readstory {
+    bottom: 50px;
+    right: 20px;
+    padding: 5px 20px;
+  }
+}
+
+/* SECTION 5: STORY */
+
+/* FOOTER */
+footer {
+  background-color: #232631;
+}
+/* FOOTER */
