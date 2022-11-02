@@ -356,26 +356,26 @@ footer {
   border-radius: 20px;
   padding: 10px;
 }
-#search-package {
+#explore-maritim {
   padding: 85px;
 }
-#search-package input {
+#explore-maritim input {
   padding: 10px 20px;
   border-radius: 12px;
 }
-#search-package input::-webkit-input-placeholder {
+#explore-maritim input::-webkit-input-placeholder {
   font-style: italic;
 }
-#search-package input:-moz-placeholder {
+#explore-maritim input:-moz-placeholder {
   font-style: italic;
 }
-#search-package input::-moz-placeholder {
+#explore-maritim input::-moz-placeholder {
   font-style: italic;
 }
-#search-package input:-ms-input-placeholder {
+#explore-maritim input:-ms-input-placeholder {
   font-style: italic;
 }
-#search-package .btn.btn-outline-primary {
+#explore-maritim .btn.btn-outline-primary {
   border-radius: 12px;
   padding: 10px 20px;
 }
