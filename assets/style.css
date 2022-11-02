@@ -57,7 +57,7 @@ select {
 
 /* SECTION 1: JUMBOTRON */
 #jumbotron {
-  background-image: url("/assets/images/index/bg-main.png");
+  background-image: url("/assets/images/index/bg-main\ compressed.jpeg");
   min-height: 100vh;
   background-position: center;
   background-size: cover;
@@ -345,7 +345,7 @@ footer {
 
 /* ====================================================== PACKAGE ====================================================================== */
 #jumbotron-package {
-  background-image: url("/assets/images/package/package.png");
+  background-image: url("/assets/images/package/package1compressed.jpeg");
   min-height: 70vh;
   background-position: center;
   background-size: cover;
