@@ -3,6 +3,11 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+:root {
+  --orange: #ff7a01;
+  --blue: #3258e8;
+  --blue-dark: #203b9c;
+}
 .button-underline {
   background: linear-gradient(currentColor 0 0) bottom / var(--d, 0) 3px
     no-repeat;
@@ -16,7 +21,7 @@ select {
   border-radius: 12px !important;
 }
 .text-orange {
-  color: #ff7a01;
+  color: var(--orange);
 }
 /* END STYLE UMUM */
 
@@ -58,7 +63,9 @@ select {
   background-size: cover;
   background-repeat: no-repeat;
 }
-#jumbotron .text-header {
+
+#jumbotron .text-header,
+#jumbotron-package .text-header {
   font-weight: 700;
   font-size: 52px;
   line-height: 78px;
@@ -70,7 +77,7 @@ select {
   }
 }
 #jumbotron .text-header .text-type {
-  background-color: #3258e8;
+  background-color: var(--blue);
   border-radius: 20px;
   padding: 10px;
 }
@@ -84,7 +91,7 @@ select {
   padding: 8px 27px;
 }
 #jumbotron .nav-link.active {
-  background-color: #3258e8;
+  background-color: var(--blue);
   color: white;
   border: transparent;
 }
@@ -101,7 +108,7 @@ select {
   backdrop-filter: blur(6px);
 }
 #jumbotron .btn-explore {
-  background-color: #3258e8;
+  background-color: var(--blue);
   border-radius: 12px;
   padding: 12px 49px;
   color: white;
@@ -208,12 +215,12 @@ select {
   transform: scale(1.05);
 }
 #explore-maritim .btn-book {
-  background-color: #3258e8;
+  background-color: var(--blue);
   padding: 8px 24px;
   color: white;
 }
 #explore-maritim .btn-book:hover {
-  background-color: #203b9c;
+  background-color: var(--blue-dark);
   color: white;
 }
 #explore-maritim .rating {
@@ -312,13 +319,13 @@ select {
   }
 }
 #story .btn-readstory {
-  background-color: #3258e8;
+  background-color: var(--blue);
   bottom: 100px;
   right: 50px;
   padding: 10px 60px;
 }
 #story .btn-readstory:hover {
-  background-color: #223ea4;
+  background-color: var(--blue-dark);
 }
 @media (max-width: 768px) {
   #story .btn-readstory {
@@ -335,3 +342,40 @@ footer {
   background-color: #232631;
 }
 /* FOOTER */
+
+/* ====================================================== PACKAGE ====================================================================== */
+#jumbotron-package {
+  background-image: url("/assets/images/package/package.png");
+  min-height: 70vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#jumbotron-package .text-header .text-type {
+  background-color: var(--blue);
+  border-radius: 20px;
+  padding: 10px;
+}
+#search-package {
+  padding: 85px;
+}
+#search-package input {
+  padding: 10px 20px;
+  border-radius: 12px;
+}
+#search-package input::-webkit-input-placeholder {
+  font-style: italic;
+}
+#search-package input:-moz-placeholder {
+  font-style: italic;
+}
+#search-package input::-moz-placeholder {
+  font-style: italic;
+}
+#search-package input:-ms-input-placeholder {
+  font-style: italic;
+}
+#search-package .btn.btn-outline-primary {
+  border-radius: 12px;
+  padding: 10px 20px;
+}
