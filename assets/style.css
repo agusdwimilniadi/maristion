@@ -8,6 +8,7 @@
   --blue: #3258e8;
   --blue-dark: #203b9c;
 }
+
 .button-underline {
   background: linear-gradient(currentColor 0 0) bottom / var(--d, 0) 3px
     no-repeat;
@@ -22,6 +23,9 @@ select {
 }
 .text-orange {
   color: var(--orange);
+}
+section {
+  padding: 50px 10px !important;
 }
 /* END STYLE UMUM */
 
@@ -64,19 +68,18 @@ select {
   background-repeat: no-repeat;
 }
 
-#jumbotron .text-header,
-#jumbotron-package .text-header {
+.text-header {
   font-weight: 700;
   font-size: 52px;
   line-height: 78px;
 }
 @media (max-width: 768px) {
-  #jumbotron .text-header {
+  .text-header {
     font-size: 30px;
     line-height: 52px;
   }
 }
-#jumbotron .text-header .text-type {
+.text-header .text-type {
   background-color: var(--blue);
   border-radius: 20px;
   padding: 10px;
@@ -356,9 +359,7 @@ footer {
   border-radius: 20px;
   padding: 10px;
 }
-#explore-maritim {
-  padding: 85px;
-}
+
 #explore-maritim input {
   padding: 10px 20px;
   border-radius: 12px;
@@ -378,4 +379,15 @@ footer {
 #explore-maritim .btn.btn-outline-primary {
   border-radius: 12px;
   padding: 10px 20px;
+}
+
+/* TRAVEL */
+#jumbotron-package.travel {
+  background-image: url("/assets/images/travel/travel-bg.png");
+}
+
+#explore-maritim .box-travel {
+  background-color: white !important;
+  box-shadow: 0px 14px 25px #f2f2f2;
+  border-radius: 12px;
 }
