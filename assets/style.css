@@ -391,3 +391,8 @@ footer {
   box-shadow: 0px 14px 25px #f2f2f2;
   border-radius: 12px;
 }
+
+/* STORIES */
+#jumbotron-package.stories {
+  background-image: url("/assets/images/stories/bg-stories.png");
+}
