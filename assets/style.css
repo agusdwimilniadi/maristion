@@ -7,8 +7,15 @@
   --orange: #ff7a01;
   --blue: #3258e8;
   --blue-dark: #203b9c;
+  --blue-dark2: #152c5b;
 }
 
+.text-blue {
+  color: var(--blue-dark) !important;
+}
+.text-blue-darken {
+  color: var(--blue-dark2) !important;
+}
 .button-underline {
   background: linear-gradient(currentColor 0 0) bottom / var(--d, 0) 3px
     no-repeat;
@@ -217,9 +224,13 @@ section {
 #explore-maritim .card-img-top:hover {
   transform: scale(1.05);
 }
-#explore-maritim .btn-book {
+.btn-book {
   background-color: var(--blue);
   padding: 8px 24px;
+  color: white;
+}
+.btn-book:hover {
+  background-color: var(--blue-dark);
   color: white;
 }
 #explore-maritim .btn-book:hover {
@@ -395,4 +406,120 @@ footer {
 /* STORIES */
 #jumbotron-package.stories {
   background-image: url("/assets/images/stories/bg-stories.png");
+}
+
+/* DETAIL PACKAGE */
+
+#detail-package {
+  background-color: white;
+  min-height: 80vh;
+  margin-top: 100px;
+}
+#detail-package .text-sub-header {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 27px;
+  text-align: center;
+  color: #b0b0b0;
+}
+#detail-package .box-booking {
+  border: 1px solid #e5e5e5;
+  padding: 70px;
+  margin: 20px;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  #detail-package .box-booking {
+    padding: 50px;
+    margin: 10px;
+  }
+}
+#detail-package .text-book {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+  color: #1abc9c;
+}
+#detail-package input,
+#detail-package select {
+  background-color: #f5f6f8;
+  border-radius: 4px !important;
+  border: none;
+  padding: 9px !important;
+}
+
+/* STEP  */
+
+/* CSS */
+.steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 2rem; */
+  position: relative;
+  margin: 2rem 18rem;
+  margin-top: 0px !important;
+}
+
+.step-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #e5e5e5;
+  color: #898989;
+  transition: 0.4s;
+}
+@media (max-width: 922px) {
+  .steps {
+    margin: 2rem;
+  }
+}
+
+.step-button[aria-expanded="true"] {
+  width: 60px;
+  height: 60px;
+  background-color: #1abc9c;
+  color: white;
+}
+
+.done {
+  background-color: pink;
+  color: #fff;
+}
+
+.step-item {
+  z-index: 10;
+  text-align: center;
+}
+
+#progress {
+  -webkit-appearance: none;
+  position: absolute;
+  width: 95%;
+  z-index: 5;
+  height: 10px;
+  margin-left: 18px;
+}
+
+/* to customize progress bar */
+#progress::-webkit-progress-value {
+  background-color: chocolate;
+  transition: 0.5s ease;
+}
+
+#progress::-webkit-progress-bar {
+  background-color: #e5e5e5;
+  height: 3px;
+}
+
+#detail-package .line {
+  border-right: 1px solid black !important;
+}
+@media (max-width: 768px) {
+  #detail-package .line {
+    border-right: none !important;
+  }
 }

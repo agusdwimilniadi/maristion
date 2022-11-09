@@ -1,0 +1,10 @@
+.text-main {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 170%;
+  /* or 27px */
+
+  color: #b0b0b0;
+}
