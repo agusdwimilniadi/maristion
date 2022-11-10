@@ -34,6 +34,25 @@ select {
 section {
   padding: 50px 10px !important;
 }
+.text-main {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 170%;
+  /* or 27px */
+
+  color: #b0b0b0;
+}
+.card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* number of lines to show */
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
 /* END STYLE UMUM */
 
 /* NAVBAR */
@@ -68,7 +87,7 @@ section {
 
 /* SECTION 1: JUMBOTRON */
 #jumbotron {
-  background-image: url("/assets/images/index/bg-main\ compressed.jpeg");
+  background-image: url("./images/index/bg-main\ compressed.jpeg");
   min-height: 100vh;
   background-position: center;
   background-size: cover;
@@ -359,7 +378,7 @@ footer {
 
 /* ====================================================== PACKAGE ====================================================================== */
 #jumbotron-package {
-  background-image: url("/assets/images/package/package1compressed.jpeg");
+  background-image: url("./images/package/package1compressed.jpeg");
   min-height: 70vh;
   background-position: center;
   background-size: cover;
@@ -394,7 +413,7 @@ footer {
 
 /* TRAVEL */
 #jumbotron-package.travel {
-  background-image: url("/assets/images/travel/travel-bg.png");
+  background-image: url("./images/travel/travel-bg.png");
 }
 
 #explore-maritim .box-travel {
@@ -405,7 +424,7 @@ footer {
 
 /* STORIES */
 #jumbotron-package.stories {
-  background-image: url("/assets/images/stories/bg-stories.png");
+  background-image: url("./images/stories/bg-stories.png");
 }
 
 /* DETAIL PACKAGE */
